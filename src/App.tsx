@@ -1,30 +1,33 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
 import './App.css';
+import { Mail, Briefcase, User, GraduationCap } from 'lucide-react';
+
+import { Page } from './components/pages';
+import { Blog } from './components/pages/blog';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
+    <div className="container  relative flex flex-col 2xl:justify-between 2xl:flex-row items-center gap-40">
+      <div className=" 2xl:fixed left-20 top-32 lx:left-20 mt-10 ">
+        <Blog />
+      </div>
+      <div id="About" className="w-[65vw] py-12 ml-5 lg:py-10 2xl:ml-[530px] mt-5 2xl:mt-[90px]  ">
+        <Page />
+      </div>
+      <div className=" fixed right-4 top-1/3 flex flex-col gap-6 bg-[#1f1f1f] border border-gray-700 p-4 rounded-xl text-white">
+        <a href="#About">
+          <User className="hover:drop-shadow-2xl" size="40px" />
         </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+        <a href="#Resume">
+          <Briefcase size="40px" />
+        </a>
+        <a href="">
+          <GraduationCap size="40px" />
+        </a>
+        <a href="">
+          <Mail size="40px" />
         </a>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
-    </>
+    </div>
   );
 }
 
