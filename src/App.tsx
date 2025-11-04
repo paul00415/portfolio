@@ -13,17 +13,17 @@ function App() {
       <div id="About" className="w-[65vw] py-12 ml-5 lg:py-10 2xl:ml-[530px] mt-5 2xl:mt-[90px]  ">
         <Page />
       </div>
-      <div className=" fixed right-4 top-1/3 flex flex-col gap-6 bg-[#1f1f1f] border border-gray-700 p-4 rounded-xl text-white">
+      <div className=" fixed right-4 top-1/3 flex flex-col gap-6 bg-transparent border border-white p-4 rounded-xl text-white">
         <a href="#About">
           <User className="hover:drop-shadow-2xl" size="40px" />
         </a>
         <a href="#Resume">
           <Briefcase size="40px" />
         </a>
-        <a href="">
+        <a href="#Skill">
           <GraduationCap size="40px" />
         </a>
-        <a href="">
+        <a href="#Mail">
           <Mail size="40px" />
         </a>
       </div>

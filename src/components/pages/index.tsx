@@ -1,4 +1,5 @@
 import { AboutPage } from './about';
+import { Contact } from './contact';
 import { ResumePage } from './resume';
 import Skills from './skills';
 
@@ -8,13 +9,7 @@ export const Page = () => {
       <AboutPage />
       <ResumePage />
       <Skills />
-      <Skills />
-      <Skills />
-      <Skills />
-      <Skills />
-      <Skills />
-      <Skills />
-      <Skills />
+      <Contact />
     </div>
   );
 };

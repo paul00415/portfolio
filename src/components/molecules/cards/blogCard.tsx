@@ -23,8 +23,8 @@ export const BlogCard = ({
   return (
     <div className={` ${className}`}>
       <div className="flex flex-row items-center justify-around gap-5 p-5">
-        <p className="text-green-400 opacity-70 text-3xl font-semibold mb-1 ">{title}</p>
-        <p className="text-gray-200">{titleDescription}</p>
+        <p className="text-3xl font-bold text-cyan-300 mb-2">{title}</p>
+        <p className="text-blue-200 mb-6 ">{titleDescription}</p>
       </div>
       <div className="text-white justify-center flex  h-[300px] p-3">
         <img className="w-[300px]" src={image} alt={imageAlt} />

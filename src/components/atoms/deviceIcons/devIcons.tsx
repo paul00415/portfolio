@@ -17,7 +17,7 @@ export const DevIcons = ({
 }: ShowDevIconsProps) => {
   return (
     <div
-      className={`${className} w-40 bg-transparent rounded-full min-h-[230px] min-w-[100px] flex flex-col justify-center items-center border-gray-400 border-2`}
+      className={`${className} w-40 bg-transparent rounded-full h-[250px] flex flex-col justify-center items-center border-gray-400 border-2`}
     >
       <div className="flex justify-center items-center">
         <Icon className="text-white opacity-75" size={iconSize} />

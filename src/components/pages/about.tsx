@@ -10,7 +10,7 @@ export const AboutPage = () => {
         <IconLabel
           label="About"
           icon={User}
-          clasName="border-2 border-gray-400 rounded-full w-[150px]"
+          clasName="border-2 border-gray-400 rounded-full  w-[200px]"
         />
         <PageTitle label="Say Hi from Paul, Full Stack engineer"></PageTitle>
         <p className="text-[30px] font-extrabold text-gray-100 opacity-55 mt-10">
@@ -22,15 +22,15 @@ export const AboutPage = () => {
             <p className="text-green-300 font-semibold text-8xl mt-20">
               {new Date().getFullYear() - 2020 + '+'}
             </p>
-            <p className="text-gray-200 font-medium ">
+            <p className="text-gray-200 font-medium pt-5">
               YEARS OF <br />
               EXPIERENCE
             </p>
           </div>
           <div className="flex flex-col justify-center place-items-center 2xl:justify-start">
             <p className="text-green-300 font-semibold text-8xl mt-20">15+</p>
-            <p className="text-gray-200 font-medium ">
-              projects completed <br />
+            <p className="text-gray-200 pt-5 font-medium uppercase">
+              Projects completed <br />
               on 4 countries
             </p>
           </div>

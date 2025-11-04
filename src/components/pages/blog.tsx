@@ -20,7 +20,7 @@ export const Blog = () => {
       imageAlt="main image"
       address="located in Harbin, China"
     >
-      <div className="invisible 2xl:visible 2xl:absolute top-[200px] flex justify-center mx-28  w-40">
+      <div className="invisible 2xl:visible 2xl:absolute top-[200px] flex justify-center mx-28  w-40 h-0 2xl:h-40">
         <svg className="progress-icon" viewBox="0 0 60 60">
           <motion.path
             fill="none"
@@ -39,7 +39,7 @@ export const Blog = () => {
           <motion.path
             fill="none"
             strokeWidth="5"
-            stroke="white"
+            stroke="green"
             d="M14,26 L 22,33 L 35,16"
             initial={false}
             strokeDasharray="0 1"
@@ -48,7 +48,7 @@ export const Blog = () => {
         </svg>
       </div>
       <div className="flex flex-col justify-center place-items-center">
-        <p className="text-gray-400 text-lg mt-2"> ©2024 paul. All Rights Reserved.</p>
+        <p className="text-gray-300 text-lg mt-2"> ©2024 paul. All Rights Reserved.</p>
         <Mail
           size={80}
           className="opacity-75  border-2 rounded-full mt-3 border-r-gray-300 p-3 text-white"
