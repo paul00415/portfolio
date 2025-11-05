@@ -14,7 +14,7 @@ export default function Skills() {
             icon={GraduationCap}
             clasName="border-2 border-gray-400 rounded-full w-[170px]"
           />
-          <PageTitle label="My Services"></PageTitle>
+          <PageTitle label="My Services "></PageTitle>
         </div>
       </MotionDiv>
       <div className="grid justify-center grid-cols-1 xl:grid-cols-2 2xl:grid-cols-4">
