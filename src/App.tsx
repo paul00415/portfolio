@@ -27,7 +27,7 @@ function App() {
         <div
           ref={sectionRef}
           id="About"
-          className="w-[60vw] py-10  2xl:py-12 md:ml-5 lg:py-10 ml-2 2xl:ml-[530px] mt-32 2xl:mt-[150px]  "
+          className="w-[64vw] py-10  2xl:py-12 md:ml-5 lg:py-10 ml-2 2xl:ml-[530px] mt-32 2xl:mt-[150px]  "
         >
           <Page />
         </div>

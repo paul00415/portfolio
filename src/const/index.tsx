@@ -115,3 +115,5 @@ export const Skilllist = [
     devName: 'Nuxt.js',
   },
 ];
+
+export const words = ['Web Designer', 'Freelancer', 'FullStacker', 'Contact Writer'];

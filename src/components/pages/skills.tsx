@@ -17,14 +17,14 @@ export default function Skills() {
           <PageTitle label="My Services"></PageTitle>
         </div>
       </MotionDiv>
-      <div className="grid justify-center grid0cols-1 sm:grid-cols-2 2xl:grid-cols-4">
+      <div className="grid justify-center grid-cols-1 xl:grid-cols-2 2xl:grid-cols-4">
         {Skilllist?.map((value: skillProps) => {
           return (
             <div
               key={value.devName}
               className="flex flex-col justify-center place-items-center mt-10 "
             >
-              <DevIcons icon={value.icon} iconSize={100} progress={value.progress}>
+              <DevIcons icon={value.icon} iconSize={90} progress={value.progress}>
                 <></>
               </DevIcons>
 
