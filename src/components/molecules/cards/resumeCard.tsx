@@ -2,7 +2,7 @@ import type { IconType } from 'react-icons/lib';
 
 interface ResumeCardsProps {
   time?: string;
-  avatar: IconType;
+  image: string;
   title?: string;
   subTiltle?: string;
   description?: string;
@@ -10,7 +10,7 @@ interface ResumeCardsProps {
 }
 export const ResumeCards = ({
   time = '',
-  avatar: Icon,
+  image = '',
   title = '',
   subTiltle = '',
   description = '',
@@ -21,12 +21,14 @@ export const ResumeCards = ({
       <div className=" -mt-11 -m-7 w-4 h-4 rounded-full bg-gray-300" />
       <p className="text-gray-200">{time}</p>
       <div className="flex flex-row items-center mt-6">
-        <Icon className="text-white opacity-75" size={50} />
-        <p className="text-gray-200 mx-10 text-center flex place-content-center ">{title}</p>
+        <img src={image} className="w-20 h-20" />
+        <p className="text-indigo-200 mx-10 text-center flex place-content-center ">{title}</p>
       </div>
-      <p className="font-semibold text-2xl mt-6 text-green-700">{subTiltle}</p>
-      <p className="text-xl text-gray-400 mt-6">{description}</p>
-      <div className="flex flex-row gap-3 mt-6">
+      <p className="font-semibold text-2xl mt-6 text-green-200 px-4 opacity-90 underline">
+        {subTiltle}
+      </p>
+      <p className="text-xl text-gray-400 mt-6 px-4">{description}</p>
+      <div className="flex flex-row gap-8 mt-6 text-white ">
         {icons?.map((IconItem: IconType, index: number) => {
           return <IconItem key={index} className="text-blue-400" size={24} />;
         })}

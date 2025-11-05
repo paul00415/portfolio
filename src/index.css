@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 :root {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: '';
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;
@@ -25,11 +25,8 @@ a:hover {
 }
 
 body {
-  margin: 0;
-  background-color: #1d1d22;
-  display: flex;
+  background-color: #29272a;
   place-items: center;
-  min-width: 320px;
   min-height: 100vh;
 }
 
@@ -68,9 +65,19 @@ button:focus-visible {
     background-color: #ffffff;
   }
   a:hover {
-    color: #747bff;
+    color: #0bb666;
   }
   button {
     background-color: #f9f9f9;
   }
+}
+
+.animation-delay-0 {
+  animation-delay: 0s;
+}
+.animation-delay-1 {
+  animation-delay: 1s;
+}
+.animation-delay-2 {
+  animation-delay: 2s;
 }

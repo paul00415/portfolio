@@ -7,10 +7,10 @@ import { SendMailCard } from '../molecules/sendMailCard/sendMailcard';
 export const Contact = () => {
   return (
     <MotionDiv>
-      <div id="Mail">
+      <div id="Mail" className="w-[100%] 2xl:w-[80%]">
         <div>
           <IconLabel
-            label="Skill"
+            label="Contact"
             icon={Mail}
             clasName="border-2 border-gray-400 rounded-full w-[170px]"
           />

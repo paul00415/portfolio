@@ -17,7 +17,7 @@ export default function Skills() {
           <PageTitle label="My Services"></PageTitle>
         </div>
       </MotionDiv>
-      <div className="grid justify-center  grid-cols-2 2xl:grid-cols-4">
+      <div className="grid justify-center grid0cols-1 sm:grid-cols-2 2xl:grid-cols-4">
         {Skilllist?.map((value: skillProps) => {
           return (
             <div

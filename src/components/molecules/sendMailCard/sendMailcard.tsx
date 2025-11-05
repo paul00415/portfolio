@@ -1,6 +1,6 @@
 import { Button } from '../../atoms/buttons/button';
 import Input from '../../atoms/inputs/input';
-
+import { motion } from 'framer-motion';
 export const SendMailCard = () => {
   return (
     <div className="border-2 border-gray-300 rounded-3xl bg-transparent grid grid-cols-2 p-20 gap-20 mt-20 place-content-center">
@@ -32,10 +32,19 @@ export const SendMailCard = () => {
         </div>
       </div>
       <div className="col-span-2 flex justify-center">
-        <Button
-          className="bg-transparent text-gray-200 border border-gray-50 col-span-2 w-72"
-          label="Send Message"
-        />
+        <motion.div
+          animate={{
+            scaleX: [1, 1.2],
+          }}
+          transition={{
+            duration: 2,
+            ease: 'easeInOut',
+            repeat: Infinity,
+            repeatType: 'reverse',
+          }}
+        >
+          <Button className="bg-green-800 text-gray-200 col-span-2 w-72" label="Send Message" />
+        </motion.div>
       </div>
     </div>
   );

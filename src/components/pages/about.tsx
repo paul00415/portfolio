@@ -13,7 +13,7 @@ export const AboutPage = () => {
           clasName="border-2 border-gray-400 rounded-full  w-[200px]"
         />
         <PageTitle label="Say Hi from Paul, Full Stack engineer"></PageTitle>
-        <p className="text-[30px] font-extrabold text-gray-100 opacity-55 mt-10">
+        <p className="text-[30px] font-extrabold text-gray-300  mt-10">
           A skilled Full Stack Engineer with 5 years of industry experience. I am familiarwith
           Javscript/PHP/Java.
         </p>
