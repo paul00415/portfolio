@@ -17,7 +17,7 @@ function App() {
         <HomePage />
       </div>
       <div className=" min-h-screen relative mr-0  sm:px-20 ml-0 lx:ml-40 2xl:p-20  flex flex-col 2xl:justify-center 2xl:flex-row items-center gap-0 2xl:gap-20">
-        <div className=" 2xl:fixed left-20 top-14 2lx:left-20 ">
+        <div className=" 2xl:fixed top-1/2 -translate-y-1/2 left-20 2lx:left-20 ">
           {isBigScreen && sectionInView && (
             <motion.div animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
               <Blog />
