@@ -16,7 +16,7 @@ function App() {
       <div className="h-50vh" style={{ backgroundImage: `url(/back3.jpg)` }}>
         <HomePage />
       </div>
-      <div className=" min-h-screen relative p-5 2xl:p-20  flex flex-col 2xl:justify-between 2xl:flex-row items-center gap-0 2xl:gap-20">
+      <div className=" min-h-screen relative p-5 2xl:p-20  flex flex-col 2xl:justify-center 2xl:flex-row items-center gap-0 2xl:gap-20">
         <div className=" 2xl:fixed left-20 top-32 2lx:left-20 ">
           {isBigScreen && sectionInView && (
             <motion.div animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
@@ -27,7 +27,7 @@ function App() {
         <div
           ref={sectionRef}
           id="About"
-          className="w-[64vw] py-10  2xl:py-12 md:ml-5 lg:py-10 ml-2 2xl:ml-[530px] mt-32 2xl:mt-[150px]  "
+          className="pr-5 2xl:pr-10 py-10  2xl:py-12 md:ml-5 lg:py-10 ml-2 2xl:ml-[530px] mt-32 2xl:mt-[150px]  "
         >
           <Page />
         </div>
