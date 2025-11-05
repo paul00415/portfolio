@@ -5,7 +5,7 @@ import Skills from './skills';
 
 export const Page = () => {
   return (
-    <div className="flex flex-col 2xl:flex-col gap-12 sm:gap-20 2xl:gap-20">
+    <div className="flex flex-col 2xl:flex-col gap-4 sm:gap-20 2xl:gap-20">
       <AboutPage />
       <ResumePage />
       <Skills />
