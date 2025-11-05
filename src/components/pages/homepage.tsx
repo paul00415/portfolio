@@ -69,7 +69,7 @@ export const HomePage = () => {
           transition={{ duration: 1, ease: 'easeOut' }} // Smooth animation
           viewport={{ once: false, amount: 0.3 }} // Trigger when 30% visible
         >
-          <img src={Iamge_Avatar} />
+          <img src={Iamge_Avatar} className="h-[600px]" />
         </motion.div>
         <motion.div
           className=" z-0 object-cover absolute text-center place-content-center "
