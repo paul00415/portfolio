@@ -34,7 +34,7 @@ export const HomePage = () => {
       <div className="text-6xl text-white font-extrabold px-32 text-center 2xl:text-left mt-20 2xl:mt-0">
         <p className="text-3xl">HELLO</p>
         <p>
-          i am <span className="text-green-500">Paul</span> a{' '}
+          i'm <span className="text-green-500">Paul</span> a{' '}
         </p>
         <div className="flex flex-row text-center  place-content-center mt-5 ">
           <div className="text-6xl  font-extrabold text-pink-500 col-span-2 flex   mt-4">
