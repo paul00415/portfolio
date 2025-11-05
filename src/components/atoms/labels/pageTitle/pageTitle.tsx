@@ -6,8 +6,8 @@ interface IconLabelProps {
 }
 export const PageTitle = ({ label = '', className = '', children }: IconLabelProps) => {
   return (
-    <div className={`flex flex-row gap-3 p-2 ${className}`}>
-      <span className="text-7xl flex  font-extrabold  p-2 gap-9 bg-gradient-to-r from-green-400 via-blue-500 to-white bg-clip-text text-transparent">
+    <div className={`flex flex-row gap-3  ${className}`}>
+      <span className=" flex  font-extrabold  gap-9 bg-gradient-to-r from-green-400 via-blue-500 to-white bg-clip-text text-transparent">
         {label}
       </span>
       {children}

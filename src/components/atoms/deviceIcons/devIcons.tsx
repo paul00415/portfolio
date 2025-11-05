@@ -26,12 +26,12 @@ export const DevIcons = ({
       viewport={{ once: false, amount: 0.3 }}
     >
       <div
-        className={`${className} w-36 bg-transparent rounded-full h-[250px] flex flex-col justify-center items-center border-gray-400 border-2`}
+        className={`${className} w-36 bg-transparent rounded-full h-[200px] flex flex-col justify-center items-center border-gray-400 border-2`}
       >
         <div className="flex justify-center items-center">
-          <Icon className="text-white opacity-75" size={iconSize} />
+          <Icon className="text-green-500 opacity-95" size={iconSize} />
         </div>
-        <p className="text-cyan-600 mt-4 font-semibold text-2xl text-center">{progress + '%'}</p>
+        <p className="text-white mt-4 font-semibold text-2xl text-center">{progress + '%'}</p>
         {children}
       </div>
     </motion.div>

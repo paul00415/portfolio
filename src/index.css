@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 :root {
   font-family: '';
   line-height: 1.5;
@@ -28,6 +29,7 @@ body {
   background-color: #29272a;
   place-items: center;
   min-height: 100vh;
+  /* background-image: url("../public/back3.jpg"); */
 }
 
 h1 {

@@ -12,12 +12,15 @@ export const AboutPage = () => {
           icon={User}
           clasName="border-2 border-gray-400 rounded-full  w-[200px]"
         />
-        <PageTitle label="Say Hi from Paul, Full Stack engineer"></PageTitle>
-        <p className="text-[30px] font-extrabold text-gray-300  mt-10">
+        <PageTitle
+          className="text-left mt-5 text-5xl"
+          label="Say Hi from Paul, Full Stack engineer"
+        ></PageTitle>
+        <p className="text-[30px] font-extrabold text-gray-300  mt-10 text-left">
           A skilled Full Stack Engineer with 5 years of industry experience. I am familiarwith
           Javscript/PHP/Java.
         </p>
-        <div className="flex justify-center 2xl:justify-start flex-row gap-10">
+        <div className="flex justify-center 2xl:justify-center flex-row gap-10">
           <div className="flex flex-col justify-center place-items-center">
             <p className="text-green-300 font-semibold text-8xl mt-20">
               {new Date().getFullYear() - 2020 + '+'}

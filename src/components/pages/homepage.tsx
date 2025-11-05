@@ -30,8 +30,8 @@ export const HomePage = () => {
     return () => clearTimeout(timer);
   }, [displayText, isDeleting, currentWord]);
   return (
-    <div className="2xl:p-20 grid grid-cols-1 2xl:grid-cols-2">
-      <div className="text-6xl text-white font-extrabold px-32 text-center 2xl:text-left mt-20 2xl:mt-0">
+    <div className="grid grid-cols-1 2xl:grid-cols-2  px-4 lx:px-20">
+      <div className="text-6xl text-white font-extrabold px-14 lx:px-24 text-center 2xl:text-left mt-20">
         <p className="text-3xl">HELLO</p>
         <p>
           i'm <span className="text-green-500">Paul</span> a{' '}
@@ -49,27 +49,29 @@ export const HomePage = () => {
           </div>
         </div>
         <p className="text-3xl p-5 text-gray-300">
-          Outsourcing can provide corporate businesses with several advantages, incl b usinesses
-          Outsourcing can provide usinesses Outsourcing can provide
+          I’m a developer passionate about crafting accessible, pixel-perfect user interfaces that
+          blend thoughtful design with robust engineering. My favorite work lies at the intersection
+          of design and development, creating experiences that not only look great but are
+          meticulously built for performance and usability.
         </p>
         <Button
           onClick={() => {
-            const section = document.getElementById('About');
+            const section = document.getElementById('Contact');
             section?.scrollIntoView({ behavior: 'smooth' });
           }}
-          label="View Portfolio"
-          className="mt-5 text-xl bg-pink-500"
+          label="Contact Me"
+          className="mt-5 mx-10 text-xl bg-pink-500"
         />
       </div>
-      <div className="flex flex-col items-center mt-12">
+      <div className="flex flex-col items-center ">
         <motion.div
-          className="text-2xl  font-bold z-50 "
-          initial={{ y: 300, opacity: 0 }} // Start off-screen to the left
+          className="z-50 "
+          initial={{ y: 100, opacity: 0 }} // Start off-screen to the left
           whileInView={{ y: 0, opacity: 1 }} // Slide in when visible
-          transition={{ duration: 1, ease: 'easeOut' }} // Smooth animation
-          viewport={{ once: false, amount: 0.3 }} // Trigger when 30% visible
+          transition={{ duration: 2, ease: 'easeOut' }} // Smooth animation
+          viewport={{ once: false, amount: 0.7 }} // Trigger when 30% visible
         >
-          <img src={Iamge_Avatar} className="h-[600px]" />
+          <img src={Iamge_Avatar} className="h-[700px]" />
         </motion.div>
         <motion.div
           className=" z-0 object-cover absolute text-center place-content-center "
@@ -85,7 +87,7 @@ export const HomePage = () => {
         >
           <PageTitle
             label="Full Stack  Development"
-            className="object-cover overflow-auto w-[500px] mt-10 text-6xl sm:text-7xl 2xl:text-7xl  text-white font-extrabold"
+            className="object-cover flex overflow-auto w-[500px] text-6xl sm:text-7xl 2xl:text-7xl p-2  text-white font-extrabold"
           ></PageTitle>
         </motion.div>
       </div>

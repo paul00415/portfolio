@@ -20,7 +20,7 @@ export const ResumePage = () => {
             icon={Briefcase}
             clasName="border-2 border-gray-400 rounded-full w-[200px]"
           />
-          <PageTitle label="Education & Experience"></PageTitle>
+          <PageTitle className="text-left mt-5 text-5xl" label="Education & Experience"></PageTitle>
         </div>
       </MotionDiv>
 
