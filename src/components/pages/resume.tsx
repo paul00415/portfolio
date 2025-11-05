@@ -62,7 +62,7 @@ export const ResumePage = () => {
             time="Apr 2012- Apr 2016"
             icons={[]}
             image={Image_Hanoi}
-            description="Bachelor's degree, Computer Science."
+            description="Bachelor's Degree, Computer Science."
           />
         </MotionDiv>
       </div>
