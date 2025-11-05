@@ -33,10 +33,10 @@ export const HomePage = () => {
     <div className="2xl:p-40 grid grid-cols-1 2xl:grid-cols-2">
       <div className="text-6xl text-white font-extrabold px-32 text-center 2xl:text-left mt-20 2xl:mt-0">
         <p className="text-3xl">HELLO</p>
-        <p>i'm Paul a </p>
+              <p>i'm <span className='text-green-500'>Paul</span> a </p>
         <div className="flex flex-row text-center  place-content-center mt-5 ">
           <div className="text-6xl  font-extrabold text-pink-500 col-span-2 flex   mt-4">
-            <p className="text-center flex  ">{displayText}</p>
+                      <p className="text-center flex bg-gradient-to-r from-green-400 via-pink-500 to-white bg-clip-text text-transparent ">{displayText}</p>
             <motion.span
               className="ml-1 w-[2px] h-[1em] bg-white inline-block"
               animate={{ opacity: [1, 0, 1] }}
