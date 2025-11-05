@@ -30,7 +30,7 @@ export const HomePage = () => {
     return () => clearTimeout(timer);
   }, [displayText, isDeleting, currentWord]);
   return (
-    <div className="2xl:p-40 grid grid-cols-1 2xl:grid-cols-2">
+    <div className="2xl:p-20 grid grid-cols-1 2xl:grid-cols-2">
       <div className="text-6xl text-white font-extrabold px-32 text-center 2xl:text-left mt-20 2xl:mt-0">
         <p className="text-3xl">HELLO</p>
         <p>
