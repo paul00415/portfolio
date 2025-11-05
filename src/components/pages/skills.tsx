@@ -6,7 +6,7 @@ import { MotionDiv } from '../atoms/motionDiv/motionDiv';
 import { PageTitle } from '../atoms/labels/pageTitle/pageTitle';
 export default function Skills() {
   return (
-    <div id="Skill">
+    <div id="Skill" className="w-[100%]">
       <MotionDiv>
         <div>
           <IconLabel
