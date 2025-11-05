@@ -10,7 +10,7 @@ import { useMediaQuery } from './hooks/useMediaQuery';
 
 function App() {
   const { ref: sectionRef, inView: sectionInView } = useInView({ threshold: 0.1 });
-  const isBigScreen = useMediaQuery('(width: 1540px)');
+  const isBigScreen = useMediaQuery('(min-width: 1536px)');
   return (
     <div>
       <div className="h-50vh" style={{ backgroundImage: `url(/back3.jpg)` }}>
