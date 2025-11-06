@@ -12,15 +12,21 @@ import { SiSqlite, SiMysql, SiMongodb, SiTypescript, SiJavascript } from 'react-
 
 export const ResumePage = () => {
   return (
-    <div className="py-32">
+    <div className="py-32 ">
       <MotionDiv>
-        <div id="Resume">
+        <div
+          id="Resume"
+          className="flex  items-center justify-items-center sm:items-start sm:justify-items-start flex-col"
+        >
           <IconLabel
             label="Resume"
             icon={Briefcase}
             clasName="border-2 border-gray-400 rounded-full w-[200px]"
           />
-          <PageTitle className="text-left mt-5 text-5xl" label="Education & Experience"></PageTitle>
+          <PageTitle
+            className="text-cneter sm:text-left mt-5 text-5xl"
+            label="Education & Experience"
+          ></PageTitle>
         </div>
       </MotionDiv>
 

@@ -9,15 +9,15 @@ import { HomePage } from './components/pages/homepage';
 import { useMediaQuery } from './hooks/useMediaQuery';
 
 function App() {
-  const { ref: sectionRef, inView: sectionInView } = useInView({ threshold: 0.1 });
+  const { ref: sectionRef, inView: sectionInView } = useInView({ threshold: 0.13 });
   const isBigScreen = useMediaQuery('(min-width: 1536px)');
   return (
-    <div>
-      <div className="pt-2 2xl:pt-40">
+    <div className="px-4 p-0 md:p-20">
+      <div className="pt-2 2xl:pt-40 ">
         <HomePage />
       </div>
-      <div className=" min-h-screen relative mr-0  sm:px-20 ml-0 lx:ml-40 2xl:p-20  flex flex-col 2xl:justify-center 2xl:flex-row items-center gap-0 2xl:gap-20">
-        <div className=" 2xl:fixed top-1/2 -translate-y-1/2 left-20 2lx:left-20 ">
+      <div className=" relative w-full mr-0 px-0 lx:px-20 ml-0  2xl:p-20  flex flex-col 2xl:justify-center 2xl:flex-row items-center gap-0 2xl:gap-20">
+        <div className=" 2xl:fixed 2xl:top-1/2 2xl:-translate-y-1/2    2xl:left-32 ">
           {isBigScreen && sectionInView && (
             <motion.div animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
               <Blog />
@@ -26,8 +26,7 @@ function App() {
         </div>
         <div
           ref={sectionRef}
-          id="About"
-          className="2xl:pr-10 py-10  2xl:py-12 sm:ml-5 lg:py-10  2xl:ml-[530px] mt-32 2xl:mt-[150px]  "
+          className="2xl:pr-10 py-10  2xl:py-12 sm:ml-5  lg:py-10 ml-0 2xl:ml-[530px] mt-32 2xl:mt-[150px]  "
         >
           <Page />
         </div>
@@ -69,7 +68,7 @@ function App() {
             whileTap={{ scale: 0.9 }}
             transition={{ type: 'spring', stiffness: 400, damping: 50 }}
           >
-            <a href="#Mail">
+            <a href="#Contact">
               <Mail size="40px" />
             </a>
           </motion.div>

@@ -7,8 +7,8 @@ import { SendMailCard } from '../molecules/sendMailCard/sendMailcard';
 export const Contact = () => {
   return (
     <MotionDiv>
-      <div id="Mail" className="  flex flex-col w-[100%] ">
-        <div>
+      <div id="Contact" className="  flex flex-col w-[100%] mt-10">
+        <div className="flex flex-col items-center sm:items-start">
           <IconLabel
             label="Contact"
             icon={Mail}

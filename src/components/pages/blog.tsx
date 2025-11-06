@@ -17,7 +17,7 @@ export const Blog = () => {
       transition={{ type: 'spring', stiffness: 400, damping: 10 }}
     >
       <BlogCard
-        className=" w-[450px]  p-5 rounded-3xl border border-gray-200 "
+        className="   p-5 rounded-3xl border border-gray-200 "
         title="Paul"
         titleDescription="Full Stack Engineer"
         email="thepaul.work@gmail.com"

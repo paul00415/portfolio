@@ -6,22 +6,25 @@ import { MotionDiv } from '../atoms/motionDiv/motionDiv';
 export const AboutPage = () => {
   return (
     <MotionDiv>
-      <div>
+      <div
+        id="About"
+        className=" justify-left flex flex-col  place-items-center sm:justify-start sm:place-items-start"
+      >
         <IconLabel
           label="About"
           icon={User}
           clasName="border-2 border-gray-400 rounded-full  w-[200px]"
         />
         <PageTitle
-          className="text-left mt-5 text-5xl"
+          className="text-center sm:text-left mt-5 text-5xl"
           label="Say Hi from Paul, Full Stack engineer"
         ></PageTitle>
-        <p className="text-[30px] font-extrabold text-gray-300  mt-10 text-left">
+        <p className="text-[30px] font-extrabold text-gray-300  mt-10 text-center sm:text-left">
           A skilled Full Stack Engineer with 5 years of industry experience. I am familiarwith
           Javscript/PHP/Java.
         </p>
-        <div className="flex justify-center 2xl:justify-center flex-row gap-10">
-          <div className="flex flex-col justify-center place-items-center">
+        <div className="flex justify-center 2xl:justify-center flex-row gap-10  ">
+          <div className="flex flex-col justify-start place-items-center top-0 ">
             <p className="text-green-300 font-semibold text-8xl mt-20">
               {new Date().getFullYear() - 2020 + '+'}
             </p>

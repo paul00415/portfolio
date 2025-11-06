@@ -8,7 +8,7 @@ export default function Skills() {
   return (
     <div id="Skill" className="">
       <MotionDiv>
-        <div>
+        <div className="flex flex-col items-center justify-items-center sm:items-start sm:justify-items-start">
           <IconLabel
             label="Skill"
             icon={GraduationCap}
@@ -17,12 +17,12 @@ export default function Skills() {
           <PageTitle label="My Services" className="text-left mt-5 text-5xl"></PageTitle>
         </div>
       </MotionDiv>
-      <div className="grid  grid-cols-2 sm:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4">
+      <div className="grid  grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4">
         {Skilllist?.map((value: skillProps) => {
           return (
             <div
               key={value.devName}
-              className="flex flex-col place-items-center sm:place-items-start mt-10"
+              className="flex flex-col place-items-center xl:place-items-start mt-10"
             >
               <div>
                 <DevIcons icon={value.icon} iconSize={60} progress={value.progress}>

@@ -60,7 +60,7 @@ export const HomePage = () => {
             section?.scrollIntoView({ behavior: 'smooth' });
           }}
           label="Contact Me"
-          className="mt-5 mx-10 text-xl bg-pink-500"
+          className="p-3 mx-10 text-xl bg-pink-500"
         />
       </div>
       <div className="flex flex-col items-center ">
@@ -87,7 +87,7 @@ export const HomePage = () => {
         >
           <PageTitle
             label="Full Stack  Development"
-            className="object-cover flex overflow-auto w-[500px] text-6xl sm:text-7xl 2xl:text-7xl p-2  text-white font-extrabold"
+            className="object-cover flex overflow-auto 2xl:w-[500px] text-6xl sm:text-7xl 2xl:text-7xl p-2  text-white font-extrabold"
           ></PageTitle>
         </motion.div>
       </div>
