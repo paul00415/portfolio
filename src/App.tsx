@@ -12,7 +12,7 @@ function App() {
   const { ref: sectionRef, inView: sectionInView } = useInView({ threshold: 0.13 });
   const isBigScreen = useMediaQuery('(min-width: 1536px)');
   return (
-    <div className="px-4 p-0 md:p-20">
+    <div className="px-4 p-0 md:px-10">
       <div className="pt-2  ">
         <HomePage />
       </div>
