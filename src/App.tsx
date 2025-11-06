@@ -13,7 +13,7 @@ function App() {
   const isBigScreen = useMediaQuery('(min-width: 1536px)');
   return (
     <div className="px-4 p-0 md:p-20">
-      <div className="pt-2 2xl:pt-32 ">
+      <div className="pt-2 2xl:pt-20 ">
         <HomePage />
       </div>
       <div className=" relative w-full mr-0 px-0 lx:px-20 ml-0  2xl:p-20  flex flex-col 2xl:justify-center 2xl:flex-row items-center gap-0 2xl:gap-20">
