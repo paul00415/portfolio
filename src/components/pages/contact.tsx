@@ -16,7 +16,7 @@ export const Contact = () => {
           />
           <PageTitle className="text-left mt-5 text-5xl" label="Work Together"></PageTitle>
         </div>
-        <div className="w-full px-4 md:px-32">
+        <div className="w-full px-4 md:px-10 lx:px-20">
           <SendMailCard />
         </div>
       </div>
